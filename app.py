@@ -272,7 +272,7 @@ def main():
             
             # Collect answers for each part
             for row_y, answer in answers.items():
-                all_answers[f"Part {i+1}, Row {len(all_answers) + 1}"] = answer
+                all_answers[f"Question No {len(all_answers) + 1}"] = answer
 
         # Merge the cropped and processed parts back into the main image
         final_image = merge_cropped_images_into_main(transformed_document, processed_parts)
